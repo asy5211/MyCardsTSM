@@ -1,0 +1,20 @@
+# Environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Node modules
+node_modules/
+
+# Mac extraction junk
+__MACOSX/
+
+# Backup folders
+backend-backup-before-v1.1/
+backend-backup-before-v1.2/
+db-backup-before-v1.1/
+mobile-backup-before-live/
+mobile-backup-before-v2.1/
+mobile-backup-before-v2.2/
+mobile-backup-oct15/
