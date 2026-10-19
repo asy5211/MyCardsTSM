@@ -1,20 +1,60 @@
-# Environment files
-.env
-.env.*
-**/.env
-**/.env.*
-
-# Node modules
-node_modules/
-
-# Mac extraction junk
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
 __MACOSX/
 
-# Backup folders
-backend-backup-before-v1.1/
-backend-backup-before-v1.2/
-db-backup-before-v1.1/
-mobile-backup-before-live/
-mobile-backup-before-v2.1/
-mobile-backup-before-v2.2/
-mobile-backup-oct15/
+# Xcode: personal window state and build output (the project file itself stays)
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+.build/
+.swiftpm/
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Secrets and local settings (the .example files stay)
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+.vite/
+coverage/
+.nyc_output/
+*.log
+npm-debug.log*
+
+# Files the running backend creates (product photos, seller documents)
+backend/storage/
+
+# Safety copies and leftovers
+*-backup-*/
+*.backup
+*.backup-*
+*.bak
+*.orig
+*.rej
+*.swp
+*~
+
+# Database dumps
+*.dump
+*.sql.gz
+
+# Test output
+test-results/
+playwright-report/
+
+# Editors
+.idea/
+.vscode/
+
+# db/ has no package.json, so this lockfile is a stray stub
+db/package-lock.json
